@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Threshold Field</title>
+  <desc id="desc">Abstract atmospheric image with blue shadow, red ground, and pale central light.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d7d9c4"/>
+      <stop offset=".5" stop-color="#94aeb7"/>
+      <stop offset="1" stop-color="#203647"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".58" cy=".44" r=".5">
+      <stop offset="0" stop-color="#f8f0c9"/>
+      <stop offset=".58" stop-color="#d0d7bc"/>
+      <stop offset="1" stop-color="#32495a"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .18"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#sky)"/>
+  <path d="M0 820C236 630 494 532 774 526c378-8 720 104 1026 337v337H0z" fill="#243341"/>
+  <path d="M0 960c246-110 501-170 764-180 343-13 688 55 1036 205v215H0z" fill="#bb493b"/>
+  <ellipse cx="970" cy="512" rx="560" ry="360" fill="url(#glow)" opacity=".82"/>
+  <path d="M286 780c224-88 466-124 724-107 201 13 370 57 506 132" fill="none" stroke="#111615" stroke-width="21" stroke-linecap="round" opacity=".72"/>
+  <path d="M1210 204c-62 254-52 490 31 708" fill="none" stroke="#d7d26b" stroke-width="26" stroke-linecap="round" opacity=".86"/>
+  <rect width="1800" height="1200" filter="url(#grain)"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1200" role="img" aria-labelledby="title desc">
+  <title id="title">House Signal</title>
+  <desc id="desc">Abstract vertical architectural image with pale rooms, blue shadow, and red signal line.</desc>
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .15"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="1200" fill="#edeae1"/>
+  <rect x="145" y="126" width="520" height="814" fill="#1f5d78"/>
+  <rect x="665" y="126" width="590" height="814" fill="#d8d6ce"/>
+  <path d="M230 856c114-222 281-344 500-365 195-18 365 44 510 186v263H230z" fill="#151515"/>
+  <path d="M275 252h805M275 492h805M275 733h805" stroke="#f7f6f1" stroke-width="18" stroke-linecap="round" opacity=".75"/>
+  <path d="M528 188c-30 250 1 493 94 729" stroke="#bc493d" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <circle cx="992" cy="310" r="68" fill="#d7d26b"/>
+  <rect width="1400" height="1200" filter="url(#grain)"/>
+</svg>

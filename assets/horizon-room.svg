@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1013" role="img" aria-labelledby="title desc">
+  <title id="title">Horizon Room</title>
+  <desc id="desc">Abstract green horizon with architectural planes and soft signal lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#eff1e1"/>
+      <stop offset=".45" stop-color="#b9c6a5"/>
+      <stop offset="1" stop-color="#5d725e"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".86" numOctaves="2" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="1013" fill="url(#bg)"/>
+  <rect x="104" y="118" width="622" height="540" fill="#f2eee0" opacity=".78"/>
+  <rect x="724" y="118" width="838" height="540" fill="#1f5d78" opacity=".72"/>
+  <path d="M0 704c220-128 464-199 732-211 403-18 759 79 1068 293v227H0z" fill="#18201b"/>
+  <path d="M178 586c322-74 652-95 990-61" fill="none" stroke="#d7d26b" stroke-width="30" stroke-linecap="round"/>
+  <path d="M453 167c-41 218-16 408 75 571" fill="none" stroke="#bc493d" stroke-width="19" stroke-linecap="round"/>
+  <circle cx="1255" cy="357" r="88" fill="#f7f6f1" opacity=".66"/>
+  <rect width="1800" height="1013" filter="url(#grain)"/>
+</svg>

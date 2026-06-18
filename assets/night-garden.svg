@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1013" role="img" aria-labelledby="title desc">
+  <title id="title">Night Garden</title>
+  <desc id="desc">Dark abstract image with blue illuminated room and small yellow signal marks.</desc>
+  <defs>
+    <radialGradient id="light" cx=".5" cy=".42" r=".58">
+      <stop offset="0" stop-color="#4a8da0"/>
+      <stop offset=".5" stop-color="#203d52"/>
+      <stop offset="1" stop-color="#101414"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .16"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="1013" fill="#101414"/>
+  <rect x="168" y="112" width="1464" height="720" fill="url(#light)"/>
+  <path d="M256 780c118-240 322-383 613-428 259-40 480 17 663 171v257H256z" fill="#0e1212" opacity=".85"/>
+  <path d="M534 276c82 145 218 226 409 244 148 14 284-9 409-70" fill="none" stroke="#f7f6f1" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <path d="M996 164c61 206 78 400 51 582" fill="none" stroke="#d7d26b" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="427" cy="631" r="46" fill="#bc493d"/>
+  <circle cx="1368" cy="316" r="34" fill="#d7d26b"/>
+  <rect width="1800" height="1013" filter="url(#grain)"/>
+</svg>
