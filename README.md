@@ -1,6 +1,19 @@
 # getzeekey.com portfolio
 
-A static personal art portfolio prepared for Cloudflare Pages.
+A monochrome video portfolio prepared for Cloudflare Pages. The homepage is a
+full-screen video with a cursor ripple interaction; clicking anywhere opens the
+work detail page.
+
+## Upload these files
+
+- `index.html`
+- `work.html`
+- `styles.css`
+- `script.js`
+- `_headers`
+- the complete `assets/` folder
+
+Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
 
 ## Deploy on Cloudflare Pages
 
@@ -22,7 +35,12 @@ A static personal art portfolio prepared for Cloudflare Pages.
 
 ## Customize
 
-- Replace artwork files in `assets/`.
-- Edit titles and captions in `index.html`.
+- Replace `assets/home-water.mp4` with a new compressed MP4 using the same file
+  name, or update its path in both `index.html` and `work.html`.
+- Edit the title, metadata, and statement in `work.html`.
+- Replace the related stills in `assets/`, then update their paths in
+  `work.html`.
 - Change `hello@getzeekey.com` to your real email.
-- Update the artist statement in the Studio section.
+
+After changing local files, upload the changed files to GitHub. Cloudflare Pages
+will deploy the new commit automatically.
