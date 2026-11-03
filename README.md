@@ -37,9 +37,9 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
 
 - Replace `assets/home-water.mp4` with a new compressed MP4 using the same file
   name, or update its path in both `index.html` and `work.html`.
-- Edit the title, metadata, and statement in `work.html`.
-- Replace the related stills in `assets/`, then update their paths in
-  `work.html`.
+- Edit the six artwork names in `work.html`.
+- Replace the artwork JPG files in `assets/` using the same filenames. The
+  gallery reads left to right, then top to bottom; mobile uses one work per row.
 - Change `hello@getzeekey.com` to your real email.
 
 After changing local files, upload the changed files to GitHub. Cloudflare Pages
