@@ -171,6 +171,107 @@ a {
   overflow-wrap: anywhere;
 }
 
+.artwork-grid figcaption a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.artwork-grid figcaption a:focus-visible,
+.project-footer a:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.project-page {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 48px;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 60px 54px 0;
+}
+
+.project-layout > * {
+  min-width: 0;
+}
+
+.project-gallery {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.045;
+  padding: 0;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--white);
+  cursor: e-resize;
+  appearance: none;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-gallery:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.project-information {
+  padding-top: 16px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.project-information p,
+.project-information h1 {
+  margin: 0;
+}
+
+.project-metadata h1 {
+  font-size: inherit;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.project-metadata p {
+  overflow-wrap: anywhere;
+}
+
+.project-information .project-description {
+  margin-top: 124px;
+}
+
+.project-footer {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 28px 54px 32px;
+  font-size: 14px;
+}
+
+.project-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .contact-strip {
   padding: 44px 18px 24px;
   color: var(--gray-3);
@@ -186,6 +287,48 @@ a {
   color: var(--black);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  .project-layout {
+    gap: 32px;
+    padding: 40px 32px 0;
+  }
+
+  .project-information {
+    font-size: 22px;
+  }
+
+  .project-information .project-description {
+    margin-top: 80px;
+  }
+
+  .project-footer {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 24px 18px 0;
+  }
+
+  .project-information {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .project-information .project-description {
+    margin-top: 36px;
+  }
+
+  .project-footer {
+    padding: 28px 18px;
+  }
 }
 
 @media (max-width: 600px) {

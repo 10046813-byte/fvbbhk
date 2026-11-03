@@ -8,6 +8,8 @@ work detail page.
 
 - `index.html`
 - `work.html`
+- `sensing-the-unseen.html`
+- `sensing-the-unseen.js`
 - `styles.css`
 - `script.js`
 - `_headers`
@@ -38,6 +40,9 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
 - Replace `assets/home-water.mp4` with a new compressed MP4 using the same file
   name, or update its path in both `index.html` and `work.html`.
 - Edit the six artwork names in `work.html`.
+- Edit the Sensing the Unseen text and numbered photograph paths in
+  `sensing-the-unseen.html`. Clicking its image advances through photos 01-06
+  and loops back to 01.
 - Replace the artwork JPG files in `assets/` using the same filenames. The
   gallery reads left to right, then top to bottom; mobile uses one work per row.
 - Change `hello@getzeekey.com` to your real email.
