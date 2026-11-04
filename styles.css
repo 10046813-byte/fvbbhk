@@ -263,6 +263,20 @@ a {
   margin-top: 26px;
 }
 
+.dialogue-page .project-layout {
+  grid-template-columns: minmax(0, 1.045fr) minmax(0, 1fr);
+  gap: 44px;
+  padding: 60px 40px 0;
+}
+
+.dialogue-page .project-information {
+  font-size: 24px;
+}
+
+.dialogue-page .project-information .project-description {
+  margin-top: 118px;
+}
+
 .project-footer {
   max-width: 1480px;
   margin: 0 auto;
@@ -273,6 +287,11 @@ a {
 .tides-page .project-footer {
   padding-right: 32px;
   padding-left: 32px;
+}
+
+.dialogue-page .project-footer {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .project-footer a:hover {
@@ -331,26 +350,30 @@ a {
 
 @media (max-width: 760px) {
   .project-layout,
-  .tides-page .project-layout {
+  .tides-page .project-layout,
+  .dialogue-page .project-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     padding: 24px 18px 0;
   }
 
   .project-information,
-  .tides-page .project-information {
+  .tides-page .project-information,
+  .dialogue-page .project-information {
     padding-top: 0;
     font-size: 20px;
     line-height: 1.3;
   }
 
   .project-information .project-description,
-  .tides-page .project-information .project-description {
+  .tides-page .project-information .project-description,
+  .dialogue-page .project-information .project-description {
     margin-top: 36px;
   }
 
   .project-footer,
-  .tides-page .project-footer {
+  .tides-page .project-footer,
+  .dialogue-page .project-footer {
     padding: 28px 18px;
   }
 }
