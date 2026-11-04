@@ -18,6 +18,8 @@ work detail page.
 - `the-butterfly-in-the-brain.js`
 - `poetry-of-city.html`
 - `poetry-of-city.js`
+- `caring-knot.html`
+- `caring-knot.js`
 - `styles.css`
 - `script.js`
 - `_headers`
@@ -62,6 +64,9 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
   returns to 14 on the next click.
 - Edit Poetry of City text and photograph paths in `poetry-of-city.html`.
   Its image cycles through photos 19-22 and returns to 19 on the next click.
+- Edit Caring Knot text and its photograph list in `caring-knot.html`.
+  This project currently contains only photo 24, so clicking the image
+  returns to the same photograph.
 - Replace the artwork JPG files in `assets/` using the same filenames. The
   gallery reads left to right, then top to bottom; mobile uses one work per row.
 - Change `hello@getzeekey.com` to your real email.
