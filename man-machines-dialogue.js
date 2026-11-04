@@ -6,11 +6,18 @@ if (gallery) {
   const images = JSON.parse(gallery.dataset.galleryImages);
   let index = 0;
 
+  // Preload the remaining photographs for uninterrupted click-through.
+  for (const source of images.slice(1)) {
+    const preload = new Image();
+    preload.src = source;
+  }
+
   gallery.addEventListener("click", () => {
     index = (index + 1) % images.length;
     const position = `${index + 1} of ${images.length}`;
     image.src = images[index];
-    gallery.setAttribute("aria-label", `Man-Machine's Dialogue, image ${position}`);
+    image.alt = `Man-Machine's Dialogue wearable device, photograph ${position}`;
+    gallery.setAttribute("aria-label", `Man-Machine's Dialogue, image ${position}. Next image`);
     status.textContent = `Image ${position}`;
   });
 }

@@ -274,6 +274,11 @@ a {
   padding: 60px 40px 0;
 }
 
+.dialogue-page .project-gallery {
+  aspect-ratio: 3 / 2;
+  border: 0;
+}
+
 .dialogue-page .project-information {
   font-size: 24px;
 }

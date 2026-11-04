@@ -59,8 +59,10 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
   returns to 07 on the next click. These are web-sized versions of the latest
   desktop photographs; their full composition is preserved.
 - Edit Man-Machine's Dialogue text and its photograph list in
-  `man-machines-dialogue.html`. This project currently contains only photo 23,
-  so clicking the image returns to the same photograph.
+  `man-machines-dialogue.html`. Its borderless image cycles through photos
+  i-q (`assets/dialogue-i.jpg` through `assets/dialogue-q.jpg`) and returns
+  to i on the next click. The full composition of each desktop original is
+  preserved; large photos are web-sized.
 - Edit The Butterfly in the Brain text and photograph paths in
   `the-butterfly-in-the-brain.html`. Its image cycles through photos 14-18 and
   returns to 14 on the next click.
