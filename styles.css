@@ -291,6 +291,20 @@ a {
   margin-top: 48px;
 }
 
+.poetry-page .project-layout {
+  grid-template-columns: minmax(0, 1.045fr) minmax(0, 1fr);
+  gap: 32px;
+  padding: 42px 26px 0;
+}
+
+.poetry-page .project-information {
+  font-size: 18px;
+}
+
+.poetry-page .project-information .project-description {
+  margin-top: 80px;
+}
+
 .project-footer {
   max-width: 1480px;
   margin: 0 auto;
@@ -311,6 +325,11 @@ a {
 .butterfly-page .project-footer {
   padding-right: 44px;
   padding-left: 44px;
+}
+
+.poetry-page .project-footer {
+  padding-right: 26px;
+  padding-left: 26px;
 }
 
 .project-footer a:hover {
@@ -371,7 +390,8 @@ a {
   .project-layout,
   .tides-page .project-layout,
   .dialogue-page .project-layout,
-  .butterfly-page .project-layout {
+  .butterfly-page .project-layout,
+  .poetry-page .project-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     padding: 24px 18px 0;
@@ -380,7 +400,8 @@ a {
   .project-information,
   .tides-page .project-information,
   .dialogue-page .project-information,
-  .butterfly-page .project-information {
+  .butterfly-page .project-information,
+  .poetry-page .project-information {
     padding-top: 0;
     font-size: 20px;
     line-height: 1.3;
@@ -389,14 +410,16 @@ a {
   .project-information .project-description,
   .tides-page .project-information .project-description,
   .dialogue-page .project-information .project-description,
-  .butterfly-page .project-information .project-description {
+  .butterfly-page .project-information .project-description,
+  .poetry-page .project-information .project-description {
     margin-top: 36px;
   }
 
   .project-footer,
   .tides-page .project-footer,
   .dialogue-page .project-footer,
-  .butterfly-page .project-footer {
+  .butterfly-page .project-footer,
+  .poetry-page .project-footer {
     padding: 28px 18px;
   }
 }

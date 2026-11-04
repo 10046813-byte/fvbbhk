@@ -16,6 +16,8 @@ work detail page.
 - `man-machines-dialogue.js`
 - `the-butterfly-in-the-brain.html`
 - `the-butterfly-in-the-brain.js`
+- `poetry-of-city.html`
+- `poetry-of-city.js`
 - `styles.css`
 - `script.js`
 - `_headers`
@@ -58,6 +60,8 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
 - Edit The Butterfly in the Brain text and photograph paths in
   `the-butterfly-in-the-brain.html`. Its image cycles through photos 14-18 and
   returns to 14 on the next click.
+- Edit Poetry of City text and photograph paths in `poetry-of-city.html`.
+  Its image cycles through photos 19-22 and returns to 19 on the next click.
 - Replace the artwork JPG files in `assets/` using the same filenames. The
   gallery reads left to right, then top to bottom; mobile uses one work per row.
 - Change `hello@getzeekey.com` to your real email.
