@@ -54,8 +54,10 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
   `sensing-the-unseen.html`. Clicking its image advances through photos 01-06
   and loops back to 01.
 - Edit The Infinity of Tides text and photograph paths in
-  `the-infinity-of-tides.html`. Its image cycles through photos 07-13 and
-  returns to 07 on the next click.
+  `the-infinity-of-tides.html`. Its borderless image cycles through photos
+  07-13 (`assets/tides-full-07.jpg` through `assets/tides-full-13.jpg`) and
+  returns to 07 on the next click. These are web-sized versions of the latest
+  desktop photographs; their full composition is preserved.
 - Edit Man-Machine's Dialogue text and its photograph list in
   `man-machines-dialogue.html`. This project currently contains only photo 23,
   so clicking the image returns to the same photograph.

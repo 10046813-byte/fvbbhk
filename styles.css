@@ -254,6 +254,11 @@ a {
   padding: 52px 32px 0;
 }
 
+.tides-page .project-gallery {
+  aspect-ratio: 3 / 2;
+  border: 0;
+}
+
 .tides-page .project-information {
   font-size: 20px;
   line-height: 1.25;
