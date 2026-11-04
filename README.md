@@ -14,6 +14,8 @@ work detail page.
 - `the-infinity-of-tides.js`
 - `man-machines-dialogue.html`
 - `man-machines-dialogue.js`
+- `the-butterfly-in-the-brain.html`
+- `the-butterfly-in-the-brain.js`
 - `styles.css`
 - `script.js`
 - `_headers`
@@ -53,6 +55,9 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
 - Edit Man-Machine's Dialogue text and its photograph list in
   `man-machines-dialogue.html`. This project currently contains only photo 23,
   so clicking the image returns to the same photograph.
+- Edit The Butterfly in the Brain text and photograph paths in
+  `the-butterfly-in-the-brain.html`. Its image cycles through photos 14-18 and
+  returns to 14 on the next click.
 - Replace the artwork JPG files in `assets/` using the same filenames. The
   gallery reads left to right, then top to bottom; mobile uses one work per row.
 - Change `hello@getzeekey.com` to your real email.

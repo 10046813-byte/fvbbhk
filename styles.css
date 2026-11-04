@@ -277,6 +277,20 @@ a {
   margin-top: 118px;
 }
 
+.butterfly-page .project-layout {
+  grid-template-columns: minmax(0, 1.085fr) minmax(0, 1fr);
+  gap: 38px;
+  padding: 48px 44px 0;
+}
+
+.butterfly-page .project-information {
+  font-size: 20px;
+}
+
+.butterfly-page .project-information .project-description {
+  margin-top: 48px;
+}
+
 .project-footer {
   max-width: 1480px;
   margin: 0 auto;
@@ -292,6 +306,11 @@ a {
 .dialogue-page .project-footer {
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.butterfly-page .project-footer {
+  padding-right: 44px;
+  padding-left: 44px;
 }
 
 .project-footer a:hover {
@@ -351,7 +370,8 @@ a {
 @media (max-width: 760px) {
   .project-layout,
   .tides-page .project-layout,
-  .dialogue-page .project-layout {
+  .dialogue-page .project-layout,
+  .butterfly-page .project-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     padding: 24px 18px 0;
@@ -359,7 +379,8 @@ a {
 
   .project-information,
   .tides-page .project-information,
-  .dialogue-page .project-information {
+  .dialogue-page .project-information,
+  .butterfly-page .project-information {
     padding-top: 0;
     font-size: 20px;
     line-height: 1.3;
@@ -367,13 +388,15 @@ a {
 
   .project-information .project-description,
   .tides-page .project-information .project-description,
-  .dialogue-page .project-information .project-description {
+  .dialogue-page .project-information .project-description,
+  .butterfly-page .project-information .project-description {
     margin-top: 36px;
   }
 
   .project-footer,
   .tides-page .project-footer,
-  .dialogue-page .project-footer {
+  .dialogue-page .project-footer,
+  .butterfly-page .project-footer {
     padding: 28px 18px;
   }
 }
