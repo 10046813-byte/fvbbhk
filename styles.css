@@ -302,6 +302,11 @@ a {
   padding: 42px 26px 0;
 }
 
+.poetry-page .project-gallery {
+  aspect-ratio: 3 / 2;
+  border: 0;
+}
+
 .poetry-page .project-information {
   font-size: 18px;
 }

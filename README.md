@@ -65,7 +65,9 @@ Keep every item at the GitHub repository root. Do not upload `index.rtfd`.
   `the-butterfly-in-the-brain.html`. Its image cycles through photos 14-18 and
   returns to 14 on the next click.
 - Edit Poetry of City text and photograph paths in `poetry-of-city.html`.
-  Its image cycles through photos 19-22 and returns to 19 on the next click.
+  Its borderless image cycles through photos a-h and returns to a on the next
+  click. The `assets/poetry-a.png` through `assets/poetry-h.jpg` files preserve
+  the full composition of the desktop originals; large photos are web-sized.
 - Edit Caring Knot text and its photograph list in `caring-knot.html`.
   This project currently contains only photo 24, so clicking the image
   returns to the same photograph.
