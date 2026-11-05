@@ -593,6 +593,48 @@ a {
   font-style: italic;
 }
 
+.chair-project {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 60px;
+  min-width: 0;
+  margin-top: 18px;
+}
+
+.chair-media {
+  min-width: 0;
+  margin: 40px 0 0;
+}
+
+.chair-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chair-information {
+  min-width: 0;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.chair-metadata h2,
+.chair-metadata p {
+  margin: 0;
+}
+
+.chair-metadata h2 {
+  font-size: inherit;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.chair-description {
+  margin: 52px 0 0;
+}
+
 .tides-page .project-layout {
   grid-template-columns: minmax(0, 1.045fr) minmax(0, 1fr);
   gap: 36px;
@@ -766,6 +808,20 @@ a {
 }
 
 @media (max-width: 760px) {
+  .chair-project {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 36px;
+  }
+
+  .chair-media {
+    margin-top: 0;
+  }
+
+  .chair-description {
+    margin-top: 36px;
+  }
+
   .sound-mapping {
     margin-top: 36px;
   }
