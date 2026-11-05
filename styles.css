@@ -358,6 +358,52 @@ a {
   margin-top: 124px;
 }
 
+.smiling-page .project-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+  padding: 40px 48px 0;
+}
+
+.smiling-media {
+  display: grid;
+  align-content: start;
+  gap: 30px;
+  min-width: 0;
+}
+
+.smiling-page .project-gallery,
+.smiling-media video {
+  width: 100%;
+  aspect-ratio: 2.08;
+  border: 0;
+  background: var(--white);
+}
+
+.smiling-page .project-gallery {
+  margin: 0;
+  cursor: default;
+}
+
+.smiling-media video {
+  height: auto;
+  object-fit: contain;
+}
+
+.smiling-page .project-information {
+  padding-top: 28px;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.smiling-page .project-information .project-description {
+  margin-top: 120px;
+}
+
+.smiling-page .project-footer {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
 .tides-page .project-layout {
   grid-template-columns: minmax(0, 1.045fr) minmax(0, 1fr);
   gap: 36px;
@@ -531,6 +577,14 @@ a {
 }
 
 @media (max-width: 760px) {
+  .smiling-page .project-gallery {
+    aspect-ratio: 3 / 2;
+  }
+
+  .smiling-media video {
+    aspect-ratio: 16 / 9;
+  }
+
   .moving-image-list {
     gap: 48px;
     padding: 24px 18px 48px;
@@ -566,7 +620,8 @@ a {
   .dialogue-page .project-layout,
   .butterfly-page .project-layout,
   .poetry-page .project-layout,
-  .caring-page .project-layout {
+  .caring-page .project-layout,
+  .smiling-page .project-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     padding: 24px 18px 0;
@@ -577,7 +632,8 @@ a {
   .dialogue-page .project-information,
   .butterfly-page .project-information,
   .poetry-page .project-information,
-  .caring-page .project-information {
+  .caring-page .project-information,
+  .smiling-page .project-information {
     padding-top: 0;
     font-size: 20px;
     line-height: 1.3;
@@ -588,7 +644,8 @@ a {
   .dialogue-page .project-information .project-description,
   .butterfly-page .project-information .project-description,
   .poetry-page .project-information .project-description,
-  .caring-page .project-information .project-description {
+  .caring-page .project-information .project-description,
+  .smiling-page .project-information .project-description {
     margin-top: 36px;
   }
 
@@ -597,7 +654,8 @@ a {
   .dialogue-page .project-footer,
   .butterfly-page .project-footer,
   .poetry-page .project-footer,
-  .caring-page .project-footer {
+  .caring-page .project-footer,
+  .smiling-page .project-footer {
     padding: 28px 18px;
   }
 }
