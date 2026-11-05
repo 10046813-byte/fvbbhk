@@ -807,6 +807,12 @@ a {
   }
 }
 
+@media (min-width: 761px) {
+  .project-page :is(.project-information, .moving-image-caption, .sound-mapping-caption, .chair-information) {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 760px) {
   .chair-project {
     grid-template-columns: minmax(0, 1fr);
