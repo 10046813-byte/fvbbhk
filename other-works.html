@@ -6,7 +6,8 @@
     <title>Other Works | getzeekey.com</title>
     <meta name="description" content="Smiling Girl and Sound Mapping, installation, moving-image and field-recording works by getzeekey." />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="styles.css?v=20261105-sound-mapping" />
+    <link rel="stylesheet" href="styles.css?v=20261105-map-previews" />
+    <script src="sound-map.js?v=20261105-map-previews" defer></script>
   </head>
   <body class="project-page smiling-page">
     <main class="project-layout">
@@ -48,9 +49,48 @@
           </figure>
         </div>
         <div class="sound-mapping-layout">
-          <a class="sound-map-image" href="assets/sound-map.png" target="_blank" rel="noopener" aria-label="View full-size sound map" title="View full-size sound map">
-            <img src="assets/sound-map.png" alt="Sound map of a walk around Hammersmith and Fulham" width="4519" height="3523" loading="lazy" decoding="async" />
-          </a>
+          <div class="sound-map-image" data-sound-map>
+            <div class="sound-map-canvas">
+              <a class="sound-map-original" href="assets/sound-map.png" target="_blank" rel="noopener" aria-label="View full-size sound map" title="View full-size sound map">
+                <img src="assets/sound-map.png" alt="Sound map of a walk around Hammersmith and Fulham" width="4519" height="3523" loading="lazy" decoding="async" />
+              </a>
+              <button class="sound-map-hotspot" type="button" data-location="1" aria-label="Play sound map location 1 with sound" aria-pressed="false" title="Play location 1 with sound">
+                <video loop muted playsinline preload="none" data-preview-src="assets/sound-map-previews/location-01.mp4" width="640" height="360" aria-hidden="true"></video>
+                <span class="sound-map-control" aria-hidden="true">
+                  <img class="map-play-icon" src="assets/sound-map-previews/play.svg" alt="" width="16" height="16" />
+                  <img class="map-sound-icon" src="assets/sound-map-previews/volume-2.svg" alt="" width="16" height="16" />
+                </span>
+              </button>
+              <button class="sound-map-hotspot" type="button" data-location="2" aria-label="Play sound map location 2 with sound" aria-pressed="false" title="Play location 2 with sound">
+                <video loop muted playsinline preload="none" data-preview-src="assets/sound-map-previews/location-02.mp4" width="640" height="360" aria-hidden="true"></video>
+                <span class="sound-map-control" aria-hidden="true">
+                  <img class="map-play-icon" src="assets/sound-map-previews/play.svg" alt="" width="16" height="16" />
+                  <img class="map-sound-icon" src="assets/sound-map-previews/volume-2.svg" alt="" width="16" height="16" />
+                </span>
+              </button>
+              <button class="sound-map-hotspot" type="button" data-location="3" aria-label="Play sound map location 3 with sound" aria-pressed="false" title="Play location 3 with sound">
+                <video loop muted playsinline preload="none" data-preview-src="assets/sound-map-previews/location-03.mp4" width="640" height="360" aria-hidden="true"></video>
+                <span class="sound-map-control" aria-hidden="true">
+                  <img class="map-play-icon" src="assets/sound-map-previews/play.svg" alt="" width="16" height="16" />
+                  <img class="map-sound-icon" src="assets/sound-map-previews/volume-2.svg" alt="" width="16" height="16" />
+                </span>
+              </button>
+              <button class="sound-map-hotspot" type="button" data-location="4" aria-label="Play sound map location 4 with sound" aria-pressed="false" title="Play location 4 with sound">
+                <video loop muted playsinline preload="none" data-preview-src="assets/sound-map-previews/location-04.mp4" width="640" height="360" aria-hidden="true"></video>
+                <span class="sound-map-control" aria-hidden="true">
+                  <img class="map-play-icon" src="assets/sound-map-previews/play.svg" alt="" width="16" height="16" />
+                  <img class="map-sound-icon" src="assets/sound-map-previews/volume-2.svg" alt="" width="16" height="16" />
+                </span>
+              </button>
+              <button class="sound-map-hotspot" type="button" data-location="5" aria-label="Play sound map location 5 with sound" aria-pressed="false" title="Play location 5 with sound">
+                <video loop muted playsinline preload="none" data-preview-src="assets/sound-map-previews/location-05.mp4" width="640" height="360" aria-hidden="true"></video>
+                <span class="sound-map-control" aria-hidden="true">
+                  <img class="map-play-icon" src="assets/sound-map-previews/play.svg" alt="" width="16" height="16" />
+                  <img class="map-sound-icon" src="assets/sound-map-previews/volume-2.svg" alt="" width="16" height="16" />
+                </span>
+              </button>
+            </div>
+          </div>
           <div class="sound-mapping-caption">
             <h2 id="sound-mapping-title">Sound Mapping--a sound walk around H&amp;F</h2>
             <p>2024--2025</p>

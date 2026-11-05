@@ -438,9 +438,26 @@ a {
 }
 
 .sound-map-image {
+  position: relative;
   display: block;
   min-width: 0;
   aspect-ratio: 8 / 5;
+}
+
+/* Match the original map inside its wider desktop display area. */
+.sound-map-canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80.1696%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.sound-map-original {
+  display: block;
+  width: 100%;
+  height: 100%;
   cursor: zoom-in;
 }
 
@@ -450,9 +467,111 @@ a {
   object-fit: contain;
 }
 
-.sound-map-image:focus-visible {
+.sound-map-original:focus-visible,
+.sound-map-hotspot:focus-visible {
   outline: 1px solid var(--ink);
   outline-offset: 5px;
+}
+
+.sound-map-hotspot {
+  position: absolute;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sound-map-hotspot video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sound-map-hotspot.is-playing video {
+  opacity: 1;
+}
+
+.sound-map-control {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.78);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sound-map-control img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+.sound-map-control .map-sound-icon,
+.sound-map-hotspot.is-audible .map-play-icon {
+  display: none;
+}
+
+.sound-map-hotspot.is-audible .map-sound-icon {
+  display: block;
+}
+
+.sound-map-hotspot:hover .sound-map-control,
+.sound-map-hotspot:focus-visible .sound-map-control,
+.sound-map-hotspot.is-active .sound-map-control {
+  opacity: 1;
+}
+
+/* Percentage bounds come from the five photos in the 4519 x 3523 map. */
+.sound-map-hotspot[data-location="1"] {
+  left: 38.08365%;
+  top: 3.00880%;
+  width: 25.27108%;
+  height: 18.27988%;
+}
+
+.sound-map-hotspot[data-location="2"] {
+  left: 58.95110%;
+  top: 28.52682%;
+  width: 25.24895%;
+  height: 18.10957%;
+}
+
+.sound-map-hotspot[data-location="3"] {
+  left: 54.23766%;
+  top: 62.73063%;
+  width: 25.29321%;
+  height: 18.62049%;
+}
+
+.sound-map-hotspot[data-location="4"] {
+  left: 19.14140%;
+  top: 51.00766%;
+  width: 25.31534%;
+  height: 18.27988%;
+}
+
+.sound-map-hotspot[data-location="5"] {
+  left: 0;
+  top: 16.91740%;
+  width: 25.29321%;
+  height: 18.27988%;
+}
+
+@media (hover: none) {
+  .sound-map-control {
+    opacity: 1;
+  }
 }
 
 .sound-mapping-caption {
@@ -664,6 +783,10 @@ a {
 
   .sound-map-image {
     aspect-ratio: 4519 / 3523;
+  }
+
+  .sound-map-canvas {
+    width: 100%;
   }
 
   .sound-mapping-caption {
