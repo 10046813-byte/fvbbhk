@@ -671,6 +671,22 @@ a {
   margin: 52px 0 0;
 }
 
+.other-works-layout {
+  display: grid;
+  row-gap: 64px;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.other-works-page .other-work-section {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 64px 48px;
+}
+
 .tides-page .project-layout {
   grid-template-columns: minmax(0, 1.045fr) minmax(0, 1fr);
   gap: 36px;
@@ -1042,6 +1058,14 @@ a {
   .caring-page .project-footer,
   .smiling-page .project-footer {
     padding: 28px 18px;
+  }
+
+  .other-works-layout {
+    row-gap: 48px;
+  }
+
+  .other-works-page .other-work-section {
+    padding: 48px 18px;
   }
 }
 
