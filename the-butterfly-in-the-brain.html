@@ -6,21 +6,31 @@
     <title>The Butterfly in the Brain | getzeekey.com</title>
     <meta name="description" content="The Butterfly in the Brain (2023): animation, installation and sensing interaction connecting the real and virtual worlds." />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="styles.css?v=20261105-unified-type" />
-    <script src="the-butterfly-in-the-brain.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261108-brain-video" />
+    <script src="the-butterfly-in-the-brain.js?v=20261108-brain-video" defer></script>
   </head>
   <body class="project-page butterfly-page">
     <main class="project-layout">
-      <section aria-label="The Butterfly in the Brain photographs">
-        <button
-          class="project-gallery"
-          type="button"
-          data-gallery
-          data-gallery-images='["assets/butterfly-14.png", "assets/butterfly-15.png", "assets/butterfly-16.png", "assets/butterfly-17.png", "assets/butterfly-18.png"]'
-          aria-label="The Butterfly in the Brain, image 1 of 5. Next image"
-        >
-          <img src="assets/butterfly-14.png" alt="The Butterfly in the Brain installation, photograph 1 of 5" width="1076" height="688" data-gallery-image fetchpriority="high" />
-        </button>
+      <section aria-label="The Butterfly in the Brain photographs and video">
+        <div class="butterfly-gallery">
+          <button
+            class="project-gallery"
+            type="button"
+            data-gallery
+            data-gallery-images='["assets/butterfly-14.png", "assets/butterfly-15.png", "assets/butterfly-16.png", "assets/butterfly-17.png", "assets/butterfly-18.png"]'
+            aria-label="The Butterfly in the Brain, image 1 of 5. Next image"
+          >
+            <img src="assets/butterfly-14.png" alt="The Butterfly in the Brain installation, photograph 1 of 5" width="1076" height="688" data-gallery-image fetchpriority="high" />
+          </button>
+          <div class="butterfly-video-slide" data-gallery-video hidden>
+            <video controls playsinline preload="metadata" width="640" height="480" poster="assets/butterfly-brain-poster.jpg" aria-label="The Butterfly in the Brain video" tabindex="0">
+              <source src="assets/butterfly-brain.mp4" type="video/mp4" />
+            </video>
+            <button class="butterfly-gallery-next" type="button" data-gallery-next aria-label="Return to the first photograph" title="Next: first photograph">
+              <img src="assets/vendor/lucide-arrow-right.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </div>
         <p class="visually-hidden" data-gallery-status role="status" aria-live="polite">Image 1 of 5</p>
       </section>
 

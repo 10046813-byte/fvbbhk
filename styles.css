@@ -716,6 +716,59 @@ a {
   padding: 48px 44px 0;
 }
 
+.butterfly-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.045;
+}
+
+.butterfly-gallery .project-gallery {
+  height: 100%;
+}
+
+.butterfly-video-slide {
+  display: grid;
+  align-content: center;
+  height: 100%;
+}
+
+.butterfly-gallery .project-gallery[hidden],
+.butterfly-video-slide[hidden] {
+  display: none;
+}
+
+.butterfly-video-slide video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--white);
+}
+
+.butterfly-gallery-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--white);
+  cursor: pointer;
+}
+
+.butterfly-gallery-next:hover {
+  background: var(--gray-1);
+}
+
+.butterfly-gallery-next:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+
 .butterfly-page .project-information {
   font-size: 20px;
 }
