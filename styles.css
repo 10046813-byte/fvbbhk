@@ -694,6 +694,25 @@ a {
   margin: 52px 0 0;
 }
 
+.chair-reference {
+  margin: 24px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.chair-reference a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.chair-reference a:hover {
+  color: var(--gray-3);
+}
+
+.chair-reference a:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 4px;
+}
+
 .other-works-layout {
   display: grid;
   row-gap: 64px;
