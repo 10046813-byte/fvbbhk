@@ -188,6 +188,10 @@ a {
 }
 
 .about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
   background: var(--white);
   color: var(--ink);
   font-size: 20px;
@@ -218,9 +222,23 @@ a {
 }
 
 .about-page .project-footer {
+  display: grid;
+  grid-template-columns: auto minmax(0, 560px);
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px 48px;
+  width: 100%;
   max-width: none;
+  margin: auto 0 0;
   padding: 0 30px 32px;
   font-size: inherit;
+}
+
+.about-copyright {
+  color: var(--gray-3);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: right;
 }
 
 .moving-image-list {
@@ -937,6 +955,7 @@ a {
   }
 
   .about-page .project-footer {
+    grid-template-columns: minmax(0, 1fr);
     padding: 0 18px 32px;
   }
 
