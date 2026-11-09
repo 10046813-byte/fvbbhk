@@ -92,6 +92,14 @@ a {
   color: var(--ink);
 }
 
+html.works-view {
+  scroll-behavior: auto;
+}
+
+.works-view .work-hero {
+  display: none;
+}
+
 .work-header {
   position: sticky;
   top: 0;
