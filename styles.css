@@ -571,6 +571,48 @@ html.works-view {
   cursor: zoom-in;
 }
 
+html.sound-map-viewer-page {
+  scroll-behavior: auto;
+}
+
+.sound-map-viewer {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  min-width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.sound-map-zoom {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.sound-map-zoom img {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100svh;
+}
+
+.sound-map-zoom[aria-pressed="true"] {
+  cursor: zoom-out;
+}
+
+.sound-map-zoom[aria-pressed="true"] img {
+  max-width: none;
+  max-height: none;
+}
+
+.sound-map-zoom:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+
 .sound-map-image img {
   width: 100%;
   height: 100%;
