@@ -243,10 +243,53 @@ html.works-view {
 }
 
 .about-copyright {
+  min-width: 0;
   color: var(--gray-3);
   font-size: 12px;
   line-height: 1.5;
   text-align: right;
+}
+
+.about-copyright-notice {
+  display: block;
+  font-size: inherit;
+}
+
+.copyright-info {
+  margin-top: 8px;
+}
+
+.copyright-info summary {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.copyright-info summary:hover {
+  color: var(--ink);
+}
+
+.copyright-info summary:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 4px;
+}
+
+.copyright-info-copy {
+  max-width: 440px;
+  margin: 14px 0 0 auto;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.copyright-info-copy p {
+  margin: 0;
+}
+
+.copyright-info-copy p + p {
+  margin-top: 12px;
 }
 
 .moving-image-list {
